@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espelho de Classe - Turma 2C (Layout 8 Colunas)</title>
+    <title>Espelho de Classe - Turma 2B</title>
     <style>
         :root {
             --presente: #4caf50;
@@ -69,7 +69,7 @@
 
         .grid-sala {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Mudou de 8 para 6 */
+    grid-template-columns: repeat(6, 1fr);
     gap: 6px;
     margin: 5px 0;
     flex-grow: 1; 
@@ -131,15 +131,15 @@
 
     <div class="container" id="area-estudo">
         <div class="controles">
-            <button class="btn-fullscreen" onclick="toggleFullScreen()">🖥️ Tela Cheia</button>
-            <button class="btn-reset" onclick="resetarChamada()">🧹 Limpar</button>
+            <button class="btn-fullscreen" onclick="toggleFullScreen()">Tela Cheia</button>
+            <button class="btn-reset" onclick="resetarChamada()">Limpar</button>
         </div>
 
-        <div class="label-direcao">⬆️ FRENTE (LOUSA / PROFESSOR) ⬆️</div>
+        <div class="label-direcao">FRENTE (LOUSA / PROFESSOR)</div>
 
         <div class="grid-sala" id="mapa"></div>
 
-        <div class="label-direcao">⬇️ FUNDO DA SALA ⬇️</div>
+        <div class="label-direcao">FUNDO DA SALA</div>
 
         <div class="resumo">
             <strong>Faltas (2C):</strong> <span id="lista-faltas">Nenhuma.</span>
@@ -155,7 +155,7 @@
           ["Henrique Souza", "Samuel Carneiro", "Diogo Silva", "Moisés Moura", "Luiz Felipe", "Kaleb Tuma"],
           ["Victor Pereira", "Luiz Guilherme", "Gustavo Mafra", "Arthur Piquetti", "Lucas Barbosa", "Nicolas Kalkmann"],
           ["Matheus Streck", "Enzo Jesus", "Ygor Oliveira", "Ruan Silva", "Davi Braz", "Raul Oliveira"],
-          ["", "", "", "Gabriel Roque", "Luis Silva", "Heitor Loureiro"]
+          ["Heitor Loureiro", "Luis Silva", "Gabriel Roque", "", "", ""]
         ];
         let estados = JSON.parse(localStorage.getItem('chamada_2C_v8')) || {};
 
