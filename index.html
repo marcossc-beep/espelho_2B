@@ -149,13 +149,14 @@
     <script>
         // Nomes organizados para preencher as 8 colunas da sala
         const layout = [
-            ["& Joaquim N.", "& Clarice C.", "& Kauê S.", "& Davi M.", "& Mateus S.", "** Pedro B.", "Gabriel V", "Pedro S.", "* Augusto W."],
-            ["* Heitor M.", "Ígor P.", "* Nicolas G.", "* Luiz Otávio H.", "", "** Vinicius F.", "Nicolas F.", "Luiggi K.", "Vinicius D."],
-            ["Gustavo B.", "João Luz", "Arthur N.", "* Pedro M.", "", "* João Vitor P.", "Arthur G.", "Bruno P.", ""],
-            ["Eloísa P.", "Beatriz W.", "Letícia S.", "", "", "* Marcos A.", "Pedro Heins", "Lucas O.", "Henrique S."],
-            ["Maria Luiza D.", "Arthur F.", "Marina M.", "", "", "Nicolas R.", "Arthur N.", "Paulo V.", "Nicolas S."]
+          ["Guilherme Xavier", "Gianpietro Veras", "Miguel Severo", "Gustavo Bruck", "Marcelo Medeiros", "João Costa"],
+          ["Amanda Castro", "Barbara Raupp", "Ana Luiza", "Maria Sales", "Pietro Justino", "Felipe Martins"],
+          ["Sophia Bezerra", "Matheus Souza", "Lucas Schlemper", "Arthur Adrian", "Henrique Gomez", "Arthur Gomez"],
+          ["Henrique Souza", "Samuel Carneiro", "Diogo Silva", "Moisés Moura", "Luiz Felipe", "Kaleb Tuma"],
+          ["Victor Pereira", "Luiz Guilherme", "Gustavo Mafra", "Arthur Piquetti", "Lucas Barbosa", "Nicolas Kalkmann"],
+          ["Matheus Streck", "Enzo Jesus", "Ygor Oliveira", "Ruan Silva", "Davi Braz", "Raul Oliveira"],
+          ["", "", "", "Gabriel Roque", "Luis Silva", "Heitor Loureiro"]
         ];
-
         let estados = JSON.parse(localStorage.getItem('chamada_2C_v8')) || {};
 
         function renderizar() {
